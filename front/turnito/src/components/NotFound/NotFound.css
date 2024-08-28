@@ -1,0 +1,141 @@
+.not-found-container {
+    text-align: center;
+    padding: 50px;
+  }
+  
+  .error h1 {
+    font-size: 10rem;
+    margin: 0;
+    animation: pulse 1.5s infinite;
+    color: #046BF2;
+  }
+  
+  .error p {
+    font-size: 1.5rem;
+    color: #046BF2;
+  }
+  
+  .ghost-container {
+    position: relative;
+    height: 200px;
+    margin-top: 30px;
+  }
+  
+  .ghost {
+    position: relative;
+    margin: 0 auto;
+    width: 150px;
+    height: 150px;
+    background: #046BF2;
+    border-radius: 50% 50% 0 0;
+    animation: float 3s ease-in-out infinite;
+  }
+  
+  .ghost:before,
+  .ghost:after {
+    content: '';
+    position: absolute;
+    bottom: -20px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: #f0f0f0;
+    animation: float 3s ease-in-out infinite;
+  }
+  
+  .ghost:before {
+    left: 30px;
+  }
+  
+  .ghost:after {
+    right: 30px;
+  }
+  
+  .face {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .eye {
+    position: absolute;
+    top: 30%;
+    left: 30%;
+    width: 10px;
+    height: 10px;
+    background: black;
+    border-radius: 50%;
+  }
+  
+  .eye-right {
+    left: 60%;
+  }
+  
+  .mouth {
+    position: absolute;
+    bottom: 25%;
+    left: 50%;
+    width: 20px;
+    height: 5px;
+    background: black;
+    border-radius: 10px;
+    transform: translateX(-50%);
+  }
+  
+  .shadow {
+    width: 160px;
+    height: 20px;
+    background: #000;
+    border-radius: 50%;
+    margin: 0 auto;
+    opacity: 0.1;
+    animation: shadowFloat 3s ease-in-out infinite;
+  }
+  
+  @keyframes float {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+  }
+  
+  @keyframes shadowFloat {
+    0%, 100% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(0.9);
+    }
+  }
+  
+  @keyframes pulse {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.05);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+  .back-link {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    border: none;
+    background-color: #1b1a55;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+  }
+  
+  .back-link:hover {
+    background-color: #535c91;
+  }
+  

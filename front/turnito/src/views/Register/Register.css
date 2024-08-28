@@ -1,0 +1,197 @@
+.register-content .logo h1 {
+  color: transparent;
+  -webkit-text-stroke: 2px #046bf1; /* For WebKit-based browsers */
+  font-size: 1rem;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 2rem 2rem;
+  font-weight: 300;
+  z-index: 1;
+}
+
+.register-content .logo i {
+  color: #046bf1;
+  font-size: 1rem;
+  z-index: 1;
+}
+
+/* styles.css */
+.register {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f0f0f0;
+  padding: 20px;
+}
+
+.register-container {
+  position: relative;
+  display: grid;
+  grid-template-columns: 60% 40%;
+  width: 100%;
+  max-width: 1200px;
+  height: 100vh;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 1rem;
+  overflow: hidden;
+}
+
+.register-content {
+  position: relative;
+  padding: 40px;
+  background-color: #e5e5f7;
+  background-image: repeating-radial-gradient(
+      circle at 0 0,
+      transparent 0,
+      #e5e5f7 6px
+    ),
+    repeating-linear-gradient(#046bf155, #046bf1);
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.glass-effect {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.123);
+  backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(10px); /* Safari Support */
+  pointer-events: none; /* Allow clicks to pass through */
+}
+
+.content {
+  position: relative;
+  z-index: 1;
+  text-align: left;
+}
+
+.content h2 {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.register-content p {
+  margin: 20px 0;
+  font-size: 16px;
+  /* color: black; */
+}
+
+.register-content button {
+  padding: 10px 20px;
+  background-color: #0056b3;
+  color: #fff;
+  border: none;
+  border-radius: 1rem;
+  cursor: pointer;
+}
+
+.register-content button:hover {
+  background-color: #003f7f;
+}
+
+.register-form {
+  /* padding: 0px; */
+  margin: auto;
+  width: 70%;
+  z-index: 2;
+  background-color: #fff;
+}
+
+.register-form form div {
+  margin-bottom: 15px;
+}
+
+.register-form label {
+  display: block;
+  font-weight: bold;
+}
+
+.register-form input {
+  width: 100%;
+  padding: 5px;
+  box-sizing: border-box;
+  /* border: 1px solid #ccc; */
+  border-radius: 1rem;
+}
+
+.register-form button {
+  width: 100%;
+  padding: 10px;
+  background-color: #0056b3;
+  color: #fff;
+  border: none;
+  border-radius: 1rem;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.register-form button:hover {
+  background-color: #003f7f;
+}
+
+.register-form p {
+  margin-top: 10px;
+  /* background-color: #003f7f; */
+}
+
+/* Register.css */
+.error {
+  color: red;
+  margin-bottom: 10px;
+}
+
+.success {
+  color: green;
+  margin-bottom: 10px;
+}
+
+.input-error {
+  border: 1px solid red;
+}
+
+.input-success {
+  border: 2px solid green;
+}
+
+@media (max-width: 768px) {
+  .register-container {
+    grid-template-columns: 100%; /* Cambia a una columna en pantallas pequeñas */
+    height: auto; /* Permitir que el contenedor se ajuste a su contenido */
+  }
+
+  .register-content,
+  .register-form {
+    padding: 20px;
+  }
+
+  .content h2 {
+    font-size: 28px;
+  }
+
+  .register-content p {
+    font-size: 14px;
+  }
+
+  .register-form h2 {
+    font-size: 24px;
+  }
+
+  .register-form label {
+    font-size: 14px; /* Ajustar el tamaño de la fuente en pantallas pequeñas */
+  }
+
+  .register-form input {
+    padding: 10px; /* Ajustar el padding en pantallas pequeñas */
+  }
+}

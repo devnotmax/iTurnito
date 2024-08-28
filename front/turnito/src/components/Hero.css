@@ -1,0 +1,166 @@
+.hero{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    height: 100vh;
+    width: 100%;
+    margin: auto;
+    /* gap: 2rem; */
+    padding: 2rem;
+    /* background-color: blue; */
+    
+}
+
+.hero-text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    margin: auto;
+    padding: 1rem;
+}
+
+.hero-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(230, 230, 230, 0.651);
+    height: 100%;
+    width: 100%;
+    margin: auto;
+    padding: 4rem;
+    border-radius: 1rem;
+}
+
+.hero-img img{
+    width: 80%;
+}
+
+.colored-text{
+    color: #046bf1;
+}
+
+.hero-text h1{
+    font-size: 2.5rem;
+    margin-bottom: 0;
+}
+
+.hero-text h2{
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: rgb(148, 148, 148);
+}
+
+.hero-text p{
+    margin-top: 5px;
+    font-size: 1rem;
+    font-weight: 500;
+    color: rgb(148, 148, 148);
+}
+
+/* .btn{
+    background-color: #046bf1;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-top: 1rem;
+}
+
+.btn a{
+    color: white;
+    text-decoration: none;
+}
+
+button:hover{ 
+    background-color: #fff;
+}
+
+a:hover{
+    color: #046bf1;
+} */
+
+.btn {
+    margin-top: 15px;
+    background-color: #007bff; /* Color de fondo del botón */
+    border: none; /* Quita el borde del botón */
+    padding: 10px 20px; /* Espaciado interno del botón */
+    border-radius: 1rem; /* Borde redondeado */
+    display: inline-block; /* Para que el botón se comporte como un bloque en línea */
+    cursor: pointer;
+  }
+  
+  .btn a {
+    text-decoration: none; /* Quita el subrayado del enlace */
+    color: white; /* Color del texto */
+    display: flex; /* Para alinear el texto e ícono horizontalmente */
+    align-items: center; /* Alinea verticalmente el contenido */
+  }
+
+  .btn:hover {
+    background-color: #0069d9; /* Color de fondo al pasar el ratón */
+    transform: scale(1.1); /* Aumenta el tamaño del botón al pasar el ratón */
+  }
+  
+  .btn a:hover {
+    opacity: 0.8; /* Cambia la opacidad al pasar el ratón */
+  }
+  
+  .bx.bxs-calendar {
+    margin-left: 5px; /* Espacio entre el texto y el ícono */
+  }
+  
+  .hero-text span i {
+   color: #046bf1;
+  }
+
+  h3{
+    font-size: 1.5rem;
+  }
+
+  .benefits-list{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    margin: auto;
+    padding: 1rem;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    /* background-color: #0069d9; */
+  }
+
+  .benefits-list ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    margin: auto;
+    padding: 1rem;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  .benefits-list li{
+    font-size: 1rem;
+    font-weight: 400;
+  }
+
+  .benefits-list i{
+    font-size: 1.5rem;
+    color: green;
+  }
+  @media (max-width: 768px) {
+    .hero{
+        display: flex;
+        flex-direction: column;
+    }
+  }

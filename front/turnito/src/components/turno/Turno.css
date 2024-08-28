@@ -1,0 +1,88 @@
+/* Estilos generales */
+.card {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 100%;
+  text-align: center;
+  margin: 10px;
+  gap: 10px;
+}
+
+.card .date {
+  font-size: 14px;
+  color: #888;
+}
+
+.card .time {
+  font-size: 20px;
+  margin: 10px 0;
+}
+
+.card .description {
+  font-size: 16px;
+  color: #555;
+}
+
+.card .status {
+  display: flex;
+  padding: 5px 10px;
+  border-radius: 1rem;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.status.active {
+  background-color: #1c6d1f;
+}
+
+.status.cancelled {
+  background-color: #9b1a11;
+}
+
+/* Botón cancelar */
+.cancelButton {
+  background-color: #046bf1;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.cancelButton:hover {
+  background-color: #004db1;
+}
+/* Estilos para el botón deshabilitado */
+.cancelButton:disabled {
+  background-color: #ccc; /* Color de fondo deshabilitado */
+  color: #666; /* Color del texto deshabilitado */
+  cursor: not-allowed; /* Cursor de no permitido */
+  opacity: 0.7; /* Opacidad para indicar deshabilitado */
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .card {
+    grid-template-columns: 1fr;
+  }
+
+  .card .date,
+  .card .time,
+  .card .description,
+  .card .status,
+  .cancelButton {
+    width: 100%;
+    margin: 5px 0;
+  }
+}

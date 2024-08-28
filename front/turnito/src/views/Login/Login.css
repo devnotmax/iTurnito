@@ -1,0 +1,203 @@
+.login-content .logo h1 {
+  color: transparent;
+  -webkit-text-stroke: 2px #046bf1; /* For WebKit-based browsers */
+  font-size: 1rem;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 2rem 2rem;
+  font-weight: 300;
+  z-index: 1;
+}
+
+.login-content .logo i {
+  color: #046bf1;
+  font-size: 1rem;
+  z-index: 1;
+}
+
+/* styles.css */
+.login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-height:100vh;
+  background-color: #f0f0f0;
+  border-radius: 1rem;
+  /* background-color: #046bf1; */
+  padding: 4rem;
+}
+
+.login-container {
+  position: relative;
+  display: grid;
+  grid-template-columns: 60% 40%;
+  width: 100%;
+  height: 90vh;
+  margin: 0 auto;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 1rem;
+  overflow: hidden;
+}
+
+.login-content {
+  position: relative;
+  padding: 40px;
+  background-color: #e5e5f7;
+  background-image: repeating-radial-gradient(
+      circle at 0 0,
+      transparent 0,
+      #e5e5f7 6px
+    ),
+    repeating-linear-gradient(#046bf155, #046bf1);
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.glass-effect {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.123);
+  backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(10px); /* Safari Support */
+  pointer-events: none; /* Allow clicks to pass through */
+}
+
+.content {
+  position: relative;
+  z-index: 1;
+  text-align: left;
+}
+
+.content h2 {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.login-content p {
+  margin: 20px 0;
+  font-size: 16px;
+  /* color: black; */
+}
+
+.login-content button {
+  padding: 10px 20px;
+  background-color: #0056b3;
+  color: #fff;
+  border: none;
+  border-radius: 1rem;
+  cursor: pointer;
+}
+
+.login-content button:hover {
+  background-color: #003f7f;
+}
+
+.login-form {
+  padding: 40px;
+  z-index: 2;
+  background-color: #f3eded88;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  border-radius: 1rem;
+}
+
+.login-form form div {
+  margin-bottom: 15px;
+}
+
+.login-form label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.login-form input {
+  width: 100%;
+  padding: 8px;
+  box-sizing: border-box;
+  /* border: 1px solid #ccc; */
+  border-radius: 1rem;
+}
+
+.login-form button {
+  width: 100%;
+  padding: 10px;
+  background-color: #0056b3;
+  color: #fff;
+  border: none;
+  border-radius: 1rem;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.login-form button:hover {
+  background-color: #003f7f;
+}
+
+.login-form h2 {
+  color: #046bf1;
+  font-size: 30px;
+  margin-bottom: 15px;
+}
+
+.login-form a {
+  color: #046bf1;
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+
+.succes {
+  color: green;
+}
+
+.succes input {
+  color: green;
+}
+
+.error {
+  color: red;
+}
+
+.error input {
+  color: red;
+}
+
+.input-error {
+  /* background-color: red; */
+  border: 2px solid red;
+}
+
+@media (max-width: 768px) {
+  .login-container {
+    grid-template-columns: 100%; /* Cambia a una columna en pantallas pequeñas */
+    height: auto; /* Permitir que el contenedor se ajuste a su contenido */
+  }
+
+  .login-content,
+  .login-form {
+    padding: 20px;
+  }
+
+  .content h2 {
+    font-size: 28px;
+  }
+
+  .login-content p {
+    font-size: 14px;
+  }
+
+  .login-form h2 {
+    font-size: 24px;
+  }
+}

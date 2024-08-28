@@ -1,0 +1,45 @@
+<mxfile host="app.diagrams.net" modified="2024-06-18T18:44:12.952Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36" etag="ZA_6t4iqqkRASykjZgzf" version="24.5.5" type="device">
+  <diagram name="Página-1" id="dd_-9EWYCGAz9qwITLdn">
+    <mxGraphModel dx="1434" dy="756" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="7PyR_MPZKQlBTiVRe5S8-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="680" y="395" as="targetPoint" />
+            <mxPoint x="499" y="130" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="7PyR_MPZKQlBTiVRe5S8-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="160" y="395" as="targetPoint" />
+            <mxPoint x="329" y="130" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="7PyR_MPZKQlBTiVRe5S8-1" value="&lt;h1&gt;&lt;font face=&quot;Lucida Console&quot;&gt;USUARIO&lt;/font&gt;&lt;/h1&gt;&lt;div&gt;&lt;font face=&quot;Lucida Console&quot;&gt;-CREDENCIALES&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font face=&quot;Lucida Console&quot;&gt;-TURNOS&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font face=&quot;Lucida Console&quot;&gt;-INFORMACIÓN {&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font face=&quot;Lucida Console&quot;&gt;-NOMBRE Y APELLIDO&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font face=&quot;Lucida Console&quot;&gt;-EDAD&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font face=&quot;Lucida Console&quot;&gt;}&lt;/font&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="1">
+          <mxGeometry x="329" y="39" width="170" height="210" as="geometry" />
+        </mxCell>
+        <mxCell id="7PyR_MPZKQlBTiVRe5S8-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.25;entryDx=0;entryDy=0;" edge="1" parent="1" source="7PyR_MPZKQlBTiVRe5S8-4" target="7PyR_MPZKQlBTiVRe5S8-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="7PyR_MPZKQlBTiVRe5S8-4" value="&lt;h2&gt;CREDENCIALES&lt;/h2&gt;&lt;div&gt;-USUARIO&lt;/div&gt;&lt;div&gt;-CONTRASEÑA&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="80" y="395" width="160" height="210" as="geometry" />
+        </mxCell>
+        <mxCell id="7PyR_MPZKQlBTiVRe5S8-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.75;entryDx=0;entryDy=0;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="600" y="520" as="sourcePoint" />
+            <mxPoint x="240" y="572.5" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="600" y="521" />
+              <mxPoint x="380" y="521" />
+              <mxPoint x="380" y="573" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="7PyR_MPZKQlBTiVRe5S8-8" value="&lt;h2&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;TURNOS&lt;/span&gt;&lt;/h2&gt;&lt;h2&gt;&lt;span style=&quot;background-color: initial; font-size: 12px; font-weight: normal;&quot;&gt;-ASUNTO :: STRING&lt;/span&gt;&lt;/h2&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial; font-size: 12px; font-weight: normal;&quot;&gt;-HORA :: NUMBER&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;-FECHA :: NUMBER&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;-STATUS (ACTIVO/CANCELADO)&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="600" y="395" width="160" height="210" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
